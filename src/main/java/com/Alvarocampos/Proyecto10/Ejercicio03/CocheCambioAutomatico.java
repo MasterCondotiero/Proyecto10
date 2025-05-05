@@ -12,11 +12,14 @@ public class CocheCambioAutomatico extends Coche {
         ajustarMarcha();
     }
 
+    // sobreescribe frenar de coche
     @Override
     public void frenar(int decremento) {
         super.setVelocidadActual(getVelocidadActual() - decremento);
         ajustarMarcha();
     }
+
+    //  Ajusta las marchas como un automatico
     private void ajustarMarcha() {
         int velocidad = getVelocidadActual();
         int nuevaMarcha = 0;

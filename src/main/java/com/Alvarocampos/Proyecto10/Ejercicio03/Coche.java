@@ -53,7 +53,6 @@ public class Coche {
         velocidadActual = Math.max(0, velocidadActual - decremento);
     }
 
-    // cambiarMarcha: solo accesible por clases del mismo paquete
     void cambiarMarcha(int nuevaMarcha) {
         if (nuevaMarcha >= 1 && nuevaMarcha <= marchasMaximas.length) {
             marchaActual = nuevaMarcha;
