@@ -11,7 +11,7 @@ public class Ejercicio04 {
         double totalLavadoras = 0;
         double totalTelevisiones = 0;
 
-        //Añadir color random
+        //Falta añadir color random, pero va bien si te inventas otro color
         for (int i = 0; i < lista.length; i++) {
             int tipo = rand.nextInt(3);
             switch (tipo) {
@@ -41,7 +41,7 @@ public class Ejercicio04 {
                     break;
             }
         }
-
+        //Precios totales
         for (Electrodomestico e : lista) {
             double precio = e.precioFinal();
             totalElectrodomesticos += precio;
@@ -52,12 +52,12 @@ public class Ejercicio04 {
                 totalTelevisiones += precio;
             }
         }
-
+        //Precio resultados
         System.out.println("Total Electrodomesticos: " + totalElectrodomesticos + "€");
         System.out.println("Total Lavadoras: " + totalLavadoras + "€");
         System.out.println("Total Televisiones: " + totalTelevisiones + "€");
 
-
+        //Comprobar si va
         System.out.println("---ELectrodomesticos---");
         for (int i = 0; i < lista.length; i++) {
             Electrodomestico e = lista[i];
