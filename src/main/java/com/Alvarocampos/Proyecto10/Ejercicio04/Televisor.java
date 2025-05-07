@@ -7,6 +7,7 @@ public class Televisor extends Electrodomestico {
     private static final int RESOLUCION_DEF = 20;
     private static final boolean SMART_DEF = false;
 
+    //Constructor
     public Televisor() {
         this(PRECIO_DEF, PESO_DEF, COLOR_DEF, CONSUMO_DEF, RESOLUCION_DEF, SMART_DEF);
     }
@@ -20,7 +21,7 @@ public class Televisor extends Electrodomestico {
         this.resolucion = resolucion;
         this.smartTV = smartTV;
     }
-
+    //Get
     public int getResolucion() { return resolucion; }
     public boolean esSmartTV() { return smartTV; }
 
@@ -28,7 +29,7 @@ public class Televisor extends Electrodomestico {
     public double precioFinal() {
         double precio = super.precioFinal();
         if (resolucion > 40) {
-            precio += precio * 0.3;
+            precio += precio * 0.3f;
         }
         if (smartTV) {
             precio += 50;

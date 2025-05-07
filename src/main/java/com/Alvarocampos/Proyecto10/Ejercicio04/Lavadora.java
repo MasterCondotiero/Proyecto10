@@ -16,7 +16,7 @@ public class Lavadora extends Electrodomestico {
         super(precioBase, peso, color, consumoEnergetico);
         this.carga = carga;
     }
-
+    //Get
     public int getCarga() { return carga; }
 
     @Override
